@@ -13,7 +13,8 @@ public class TestBase {
 	private static final Logger log = Logger.getLogger(TestBase.class.getName());
 
 	private static String driverPath = System.getProperty("user.dir");
-	private String url = "file:///Users/nenaderceg/Downloads/PageObjectWithPageFactoryFramework-master/project/demoSite.htm";
+	//private String url = "file:////Users/nenaderceg/Desktop/Code/Tutorials/PageObjectWithPageFactoryFramework-master/project/demoSite.htm";
+	private String url = "http://automationpractice.com/index.php";
 	public WebDriver driver;
 	
 	public void init(String browserType) {

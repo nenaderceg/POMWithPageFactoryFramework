@@ -27,8 +27,28 @@ public class HomePage {
 	@FindBy(xpath=".//*[@id='center_column']/div[1]/ol/li")
 	WebElement authenticationFailed;
 	
+	@FindBy(id="email_create")
+	WebElement registerEmailAddress;
+	
+	@FindBy(id="SubmitCreate")
+	WebElement createAnAccount;
+	
+	@FindBy(xpath=".//*[@id='create_account_error']/ol/li")
+	WebElement registrationFailed;
+	
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
+	}
+	
+	public void registerToApplication(String email) {
+		signIn.click();
+		log.info("Clicked on sign in and object is:-" + signIn.toString());
+		registerEmailAddress.clear();
+		registerEmailAddress.sendKeys(email);
+		log.info("Entered the email address:-" + email + " and object is:-" + loginEmailAddress.toString());
+		createAnAccount.click();
+		log.info("Clicked on create an account button and the object is:-" + createAnAccount.toString());
+		
 	}
 	
 	public void loginToApplication(String email, String pass) {
@@ -45,5 +65,10 @@ public class HomePage {
 	public String getInvalidLoginText() {
 		log.info("Error message is:-" + authenticationFailed.getText());
 		return authenticationFailed.getText();
+	}
+	
+	public String getInvalidRegistrationText() {
+		log.info("Error message is:-" + registrationFailed.getText());
+		return registrationFailed.getText();
 	}
 }

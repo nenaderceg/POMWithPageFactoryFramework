@@ -1,0 +1,33 @@
+2018-03-14 22:10:49 INFO  TestBase:37 - Creating object of firefox
+2018-03-14 22:10:52 INFO  TestBase:54 - Navigating to file:///Users/nenaderceg/Downloads/PageObjectWithPageFactoryFramework-master/project/demoSite.htm
+2018-03-14 22:13:42 INFO  TestBase:37 - Creating object of firefox
+2018-03-14 22:13:46 INFO  TestBase:54 - Navigating to file:////Users/nenaderceg/Desktop/Code/Tutorials/PageObjectWithPageFactoryFramework-master/project/demoSite.htm
+2018-03-14 22:18:23 INFO  TC001_VerifyLoginWithInvalidCredentials:28 - =========== Starting TC001_VerifyLoginWithInvalidCredentials ========
+2018-03-14 22:18:25 INFO  HomePage:36 - Clicked on sign in and object is:-[[FirefoxDriver: firefox on MAC (7f9d045d-8ec2-b244-bc61-158d4f5ef0dd)] -> xpath: .//*[@id='header']/div[2]/div/div/nav/div[1]/a]
+2018-03-14 22:18:25 INFO  HomePage:38 - Entered the email address:-test@gmail.com and object is:-[[FirefoxDriver: firefox on MAC (7f9d045d-8ec2-b244-bc61-158d4f5ef0dd)] -> xpath: //*[@id='email']]
+2018-03-14 22:18:25 INFO  HomePage:40 - Entered a password:-password and object is:-[[FirefoxDriver: firefox on MAC (7f9d045d-8ec2-b244-bc61-158d4f5ef0dd)] -> xpath: .//*[@id='passwd']]
+2018-03-14 22:18:26 INFO  HomePage:42 - Clicked on submit button and the object is:-[[FirefoxDriver: firefox on MAC (7f9d045d-8ec2-b244-bc61-158d4f5ef0dd)] -> xpath: .//*[@id='SubmitLogin']]
+2018-03-14 22:18:26 INFO  HomePage:46 - Error message is:-Authentication failed.
+2018-03-14 22:18:26 INFO  TC001_VerifyLoginWithInvalidCredentials:32 - =========== Finished TC001_VerifyLoginWithInvalidCredentials ========
+2018-03-14 22:47:49 INFO  TestBase:38 - Creating object of firefox
+2018-03-14 22:47:52 INFO  TestBase:55 - Navigating to http://automationpractice.com/index.php
+2018-03-14 22:47:53 INFO  TC002_VerifyRegistration:23 - =========== Starting TC001_VerifyLoginWithInvalidCredentials ========
+2018-03-14 22:47:55 INFO  HomePage:45 - Clicked on sign in and object is:-[[FirefoxDriver: firefox on MAC (2c5b2774-ac62-154a-9cdf-64316af7cbae)] -> xpath: .//*[@id='header']/div[2]/div/div/nav/div[1]/a]
+2018-03-14 22:47:55 INFO  HomePage:48 - Entered the email address:-test@gmail.com and object is:-[[FirefoxDriver: firefox on MAC (2c5b2774-ac62-154a-9cdf-64316af7cbae)] -> xpath: //*[@id='email']]
+2018-03-14 22:47:55 INFO  HomePage:50 - Clicked on create an account button and the object is:-[[FirefoxDriver: firefox on MAC (2c5b2774-ac62-154a-9cdf-64316af7cbae)] -> id: SubmitCreate]
+2018-03-14 22:47:55 INFO  HomePage:71 - Error message is:-An account using this email address has already been registered. Please enter a valid password or request a new one.
+2018-03-14 22:48:45 INFO  TestBase:38 - Creating object of firefox
+2018-03-14 22:48:48 INFO  TestBase:55 - Navigating to http://automationpractice.com/index.php
+2018-03-14 22:48:49 INFO  TC002_VerifyRegistration:23 - =========== Starting TC001_VerifyLoginWithInvalidCredentials ========
+2018-03-14 22:48:51 INFO  HomePage:45 - Clicked on sign in and object is:-[[FirefoxDriver: firefox on MAC (008bcbe4-4b38-c64d-ae7c-8c1f081f5841)] -> xpath: .//*[@id='header']/div[2]/div/div/nav/div[1]/a]
+2018-03-14 22:48:51 INFO  HomePage:48 - Entered the email address:-test@gmail.com and object is:-[[FirefoxDriver: firefox on MAC (008bcbe4-4b38-c64d-ae7c-8c1f081f5841)] -> xpath: //*[@id='email']]
+2018-03-14 22:48:51 INFO  HomePage:50 - Clicked on create an account button and the object is:-[[FirefoxDriver: firefox on MAC (008bcbe4-4b38-c64d-ae7c-8c1f081f5841)] -> id: SubmitCreate]
+2018-03-14 22:48:52 INFO  HomePage:71 - Error message is:-An account using this email address has already been registered. Please enter a valid password or request a new one.
+2018-03-14 22:48:52 INFO  TC002_VerifyRegistration:27 - =========== Finished TC001_VerifyLoginWithInvalidCredentials ========
+2018-03-14 23:14:32 INFO  TestBase:38 - Creating object of firefox
+2018-03-14 23:14:36 INFO  TestBase:55 - Navigating to http://automationpractice.com/index.php
+2018-03-14 23:14:38 INFO  TC002_VerifyRegistration:23 - =========== Starting TC001_VerifyLoginWithInvalidCredentials ========
+2018-03-14 23:14:39 INFO  HomePage:45 - Clicked on sign in and object is:-[[FirefoxDriver: firefox on MAC (23e97059-2d16-2b46-b975-8bd1c6b75834)] -> xpath: .//*[@id='header']/div[2]/div/div/nav/div[1]/a]
+2018-03-14 23:14:40 INFO  HomePage:48 - Entered the email address:-test@gmail.com and object is:-[[FirefoxDriver: firefox on MAC (23e97059-2d16-2b46-b975-8bd1c6b75834)] -> xpath: //*[@id='email']]
+2018-03-14 23:14:40 INFO  HomePage:50 - Clicked on create an account button and the object is:-[[FirefoxDriver: firefox on MAC (23e97059-2d16-2b46-b975-8bd1c6b75834)] -> id: SubmitCreate]
+2018-03-14 23:14:40 INFO  HomePage:71 - Error message is:-An account using this email address has already been registered. Please enter a valid password or request a new one.
