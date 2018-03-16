@@ -13,9 +13,10 @@ public class TC002_VerifyRegistration extends TestBase{
 	
 	private static Logger log = Logger.getLogger(TC002_VerifyRegistration.class.getName());
 	HomePage homepage;
+	
 	@BeforeClass
 	public void setUp() {
-		init("firefox");
+		init("Firefox");
 	}
 
 	@Test
@@ -23,7 +24,7 @@ public class TC002_VerifyRegistration extends TestBase{
 		log.info("=========== Starting TC001_VerifyLoginWithInvalidCredentials ========");
 		homepage = new HomePage(driver);
 		homepage.registerToApplication("test@gmail.com");
-		Assert.assertEquals(homepage.getInvalidRegistrationText(), " An account using this email address has already been registered. Please enter a valid password or request a new one.");
+		Assert.assertEquals(homepage.getInvalidRegistrationText(), "An account using this email address has already been registered. Please enter a valid password or request a new one.");
 		log.info("=========== Finished TC001_VerifyLoginWithInvalidCredentials ========");
 		/*
 		driver.switchTo().frame(driver.findElement(By.id("PreviewFrame")));

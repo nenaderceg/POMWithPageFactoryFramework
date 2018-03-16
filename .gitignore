@@ -1,3 +1,5 @@
 /test-output/
 /.project
 /.classpath
+/target/*
+*.xlsx
