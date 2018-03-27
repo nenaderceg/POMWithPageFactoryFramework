@@ -4,25 +4,19 @@ import org.testng.annotations.Test;
 import com.test.automation.uiAutomation.testBase.TestBase;
 import com.test.automation.uiAutomation.uiActions.HomePage;
 
-import org.testng.annotations.BeforeClass;
 import org.apache.log4j.Logger;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 
 public class TC002_VerifyRegistration extends TestBase{
 	
 	private static Logger log = Logger.getLogger(TC002_VerifyRegistration.class.getName());
 	HomePage homepage;
-	
-	@BeforeClass
-	public void setUp() {
-		init("Firefox");
-	}
+
 
 	@Test
 	public void testSignUp() {
 		log.info("=========== Starting TC001_VerifyLoginWithInvalidCredentials ========");
-		homepage = new HomePage(driver);
+		homepage = new HomePage(getDriver());
 		homepage.registerToApplication("test@gmail.com");
 		Assert.assertEquals(homepage.getInvalidRegistrationText(), "An account using this email address has already been registered. Please enter a valid password or request a new one.");
 		log.info("=========== Finished TC001_VerifyLoginWithInvalidCredentials ========");
@@ -40,11 +34,6 @@ public class TC002_VerifyRegistration extends TestBase{
 		driver.findElement(By.cssSelector("input.btn")).click();
 		*/
 		
-	}
-
-	@AfterClass
-	public void endTest() {
-		driver.close();
 	}
 
 }

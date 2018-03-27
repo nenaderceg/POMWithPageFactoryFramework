@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Regression Suite">
-<test name="TC001_VerifyLoginWithInvalidCredentials">
-<classes>
-<class name="com.test.automation.uiAutomation.homepage.TC001_VerifyLoginWithInvalidCredentials"></class>
-</classes>
-</test>
+<suite name="Regression Suite" thread-count="2" parallel="none">
+	<listeners>
+		<listener class-name="com.test.automation.uiAutomation.customListener.Listener"></listener>
+	</listeners>
+	<test name="TC001_VerifyLoginWithInvalidCredentials_firefox">
+	<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.test.automation.uiAutomation.homepage.TC001_VerifyLoginWithInvalidCredentials"></class>
+			<!-- <class name="com.test.automation.uiAutomation.homepage.TC002_VerifyRegistration"></class> -->
+		</classes>
+	</test>
+	
+<!-- 	<test name="TC001_VerifyLoginWithInvalidCredentials_chrome">
+	<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.test.automation.uiAutomation.homepage.TC001_VerifyLoginWithInvalidCredentials"></class>
+			<class name="com.test.automation.uiAutomation.homepage.TC002_VerifyRegistration"></class>
+		</classes>
+	</test> -->
+	
 </suite>

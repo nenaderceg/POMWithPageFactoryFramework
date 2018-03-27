@@ -15,15 +15,12 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ExcelReader {
 	
 	private static Logger log = Logger.getLogger(ExcelReader.class.getName());
-	
-	String path;
+
 	private FileInputStream fis = null;
 	//private FileOutputStream fos;
 	private XSSFWorkbook wb;
 	
-	public ExcelReader(String path) {
-		
-		this.path = path;
+	public ExcelReader(String path) {	
 		try {
 			fis = new FileInputStream(new File(path));
 			wb = new XSSFWorkbook(fis);
@@ -59,8 +56,7 @@ public class ExcelReader {
 		for(int i = 1; i <= lastRowNum; i++) {
 			XSSFRow row = sheet.getRow(i);
 			for(int j = 0; j < lastCellNum; j++) {
-				object[i - 1][j] = getStringCellValue(row.getCell(j));
-				
+				object[i - 1][j] = getStringCellValue(row.getCell(j));				
 			}
 		}
 		return object;
@@ -68,39 +64,38 @@ public class ExcelReader {
 	
 	@SuppressWarnings("deprecation")
 	private String getStringCellValue(XSSFCell cell) {
-		String result = null;
+		String value = null;
 		if(cell == null) {
 			log.error("cell == null");
 		}
 		switch(cell.getCellType()) {
 		case Cell.CELL_TYPE_STRING:
-			result = cell.getStringCellValue();
+			value = cell.getStringCellValue();
 			break;
 		case Cell.CELL_TYPE_NUMERIC:
-			result = String.valueOf(cell.getNumericCellValue());
+			value = String.valueOf(cell.getNumericCellValue());
 			break;
 		case Cell.CELL_TYPE_BOOLEAN:
-			result = String.valueOf(cell.getBooleanCellValue());
+			value = String.valueOf(cell.getBooleanCellValue());
 			break;
 		case Cell.CELL_TYPE_BLANK:
-			result = "";
+			value = "";
 		default:
 			break;
 		}
-		return result;
+		return value;
 	}
 	
 	public String getStringCellValue(String sheetName, int row, int col) {
-		String result = null;
-		
+		String value = null;	
 			try {
 				XSSFSheet sheet = wb.getSheet(sheetName);
 				XSSFCell cell = sheet.getRow(row).getCell(col);
-				result = getStringCellValue(cell);
+				value = getStringCellValue(cell);
 			} catch(Exception e) {
 				e.printStackTrace();
 			}
-			return result;
+			return value;
 		
 	}
 	

@@ -3,3 +3,4 @@
 /.classpath
 /target/*
 *.xlsx
+/automation.out

@@ -39,6 +39,7 @@ public class HomePage {
 	WebElement registrationFailed;
 	
 	public HomePage(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -56,6 +57,7 @@ public class HomePage {
 	public void loginToApplication(String email, String pass) {
 		signIn.click();
 		log.info("Clicked on sign in and object is:-" + signIn.toString());
+		loginEmailAddress.clear();
 		loginEmailAddress.sendKeys(email);
 		log.info("Entered the email address:-" + email + " and object is:-" + loginEmailAddress.toString());
 		loginPassword.sendKeys(pass);
