@@ -89,7 +89,7 @@ public class TestBase {
 	private void navigateTo(String url) {
 		log.info("Navigating to " + url);
 		driver.navigate().to(url);
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
