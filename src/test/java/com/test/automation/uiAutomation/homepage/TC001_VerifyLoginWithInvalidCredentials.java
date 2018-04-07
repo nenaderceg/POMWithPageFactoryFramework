@@ -28,16 +28,16 @@ public class TC001_VerifyLoginWithInvalidCredentials extends TestBase {
 		Assert.assertEquals(homepage.getInvalidLoginText(), "Authentication failed.");
 		log.info("=========== Finished TC001_VerifyLoginWithInvalidCredentials ========");
 	}
-	
-	@Test
-	public void verifyFailTest() {
-		log.info("====================== Starting verifyFailTest ======================");
-		homepage = new HomePage(driver);
-		homepage.loginToApplication("jediGovan@yahoo.com", "pusi kurac");
-		//getScreenShot("verifyLoginWithInvalidCredentials_" + email);
-		Assert.assertEquals(homepage.getInvalidLoginText(), "failed.");
-		log.info("====================== Finished verifyFailTest ======================");
-	}
+		
+//	@Test
+//	public void verifyFailTest() {
+//		log.info("====================== Starting verifyFailTest ======================");
+//		homepage = new HomePage(driver);
+//		homepage.loginToApplication("jediGovan@yahoo.com", "pusi kurac");
+//		//getScreenShot("verifyLoginWithInvalidCredentials_" + email);
+//		Assert.assertEquals(homepage.getInvalidLoginText(), "failed.");
+//		log.info("====================== Finished verifyFailTest ======================");
+//	}
 	
 	@DataProvider(name= "loginData")
 	public Object[][] loginData() {

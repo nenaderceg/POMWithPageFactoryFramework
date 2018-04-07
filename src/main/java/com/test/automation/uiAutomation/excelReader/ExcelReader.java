@@ -36,6 +36,7 @@ public class ExcelReader {
 			if(fis!= null) {
 				try {
 					fis.close();
+					wb.close();
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
