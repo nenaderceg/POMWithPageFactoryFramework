@@ -51,8 +51,8 @@ public class TestBase {
 		loadObjectRepo();
 		driver = setBrowser(browserType);
 		
-		if(browserType.toLowerCase().equals("chrome"));
-		chromeBringToFront();
+		//if(browserType.toLowerCase().equals("chrome"));
+		//chromeBringToFront();
 		
 		url = objectRepo.getProperty("url");
 		navigateTo(url);
